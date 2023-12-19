@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScanActivity"
+    >
+    <me.dm7.barcodescanner.zxing.ZXingScannerView
+        android:id="@+id/zxScan"
+        android:layout_above="@+id/layout_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_result"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="@color/black_shade_1"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/scanned"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="..."
+            android:textColor="@color/Yellow"
+            android:textColorHint="@color/Yellow"
+            android:textSize="24dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</RelativeLayout>

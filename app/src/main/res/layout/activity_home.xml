@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".HomeActivit">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/qr"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/iVlogo"/>
+
+    <Button
+        android:id="@+id/GenButton"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iVlogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/button_back"
+        android:text="Generate QR Code"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/ScanButton"
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iVlogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"
+        android:background="@drawable/button_back"
+        android:text="Scan QR Code"
+        android:textAllCaps="false"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iVlogo"
+        android:layout_marginTop="50dp"
+        android:id="@+id/AppHeading"
+        android:text="ASSET TRACKER"
+        android:textStyle="bold"
+        android:textColor="@color/Yellow"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="30sp"
+        />
+
+
+</RelativeLayout>
